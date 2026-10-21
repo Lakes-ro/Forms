@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caixinhas — Pesquisa Mulheres 30+</title>
+  <link rel="stylesheet" href="style_2.css">
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <h1>Mulheres 30+ e Organização Financeira 💜</h1>
+      <p>Estou a desenvolver o <strong>Caixinhas</strong>, uma ferramenta para ajudar a organizar a renda e alcançar objetivos. A sua participação é voluntária e leva cerca de 5 minutos.</p>
+    </header>
+
+    <form id="form-pesquisa">
+      <!-- Seção 1 -->
+      <section class="card">
+        <h2>1. Perfil das participantes</h2>
+        
+        <div class="field">
+          <label for="faixa_etaria">1. Qual é a sua faixa etária?</label>
+          <select id="faixa_etaria" name="faixa_etaria" required>
+            <option value="">Selecione...</option>
+            <option value="30-34">30 a 34 anos</option>
+            <option value="35-39">35 a 39 anos</option>
+            <option value="40-44">40 a 44 anos</option>
+            <option value="45-49">45 a 49 anos</option>
+            <option value="50-59">50 a 59 anos</option>
+            <option value="60+">60 anos ou mais</option>
+            <option value="nao_informar">Prefiro não informar</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="situacao_profissional">2. Qual é sua situação profissional atual?</label>
+          <select id="situacao_profissional" name="situacao_profissional" required>
+            <option value="">Selecione...</option>
+            <option value="clt">Trabalho com carteira assinada</option>
+            <option value="servidora">Sou servidora pública</option>
+            <option value="autonoma">Autônoma / Profissional liberal</option>
+            <option value="empreendedora">Empreendedora</option>
+            <option value="informal">Trabalho informalmente</option>
+            <option value="desempregada">Desempregada</option>
+            <option value="domestico_familiar">Cuidados familiares / Doméstico</option>
+            <option value="aposentada">Aposentada</option>
+            <option value="outra">Outra situação</option>
+          </select>
+        </div>
+      </section>
+
+      <!-- Seção 5 -->
+      <section class="card">
+        <h2>5. Opiniões e sugestões</h2>
+        <div class="field">
+          <label for="sugestao_geral">O que mais ajudaria você a ter uma vida financeira organizada?</label>
+          <textarea id="sugestao_geral" name="sugestao_geral" rows="4"></textarea>
+        </div>
+      </section>
+
+      <button type="submit" id="btn-submit" class="btn-primary">Enviar Respostas</button>
+    </form>
+  </main>
+
+  <script type="module" src="supabase.js"></script>
+</body>
+</html>
