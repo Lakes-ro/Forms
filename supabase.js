@@ -3,8 +3,8 @@ import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js
 const SUPABASE_URL = 'https://ywossdxnqhrhznglsvcr.supabase.co';
 const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inl3b3NzZHhucWhyaHpuZ2xzdmNyIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzQxOTIzMjcsImV4cCI6MjA4OTc2ODMyN30.q654hvqIXjT2qi5fsLKYLx_VwCkFRCHNdYqHBfN08Uo';
 
-// Insira a URL para onde deseja redirecionar o usuário após o envio
-const REDIRECT_URL = 'https://SUA-URL-AQUI.com';
+// URL do sistema para onde a usuária será redirecionada após o envio
+const REDIRECT_URL = 'https://educacaofinanceira.vercel.app/';
 
 const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
 
@@ -41,7 +41,7 @@ form.addEventListener('submit', async (e) => {
     alert('Obrigado por participar! 💜 Resposta enviada com sucesso.');
     form.reset();
 
-    // Redireciona para a URL configurada
+    // Redireciona para o sistema
     window.location.href = REDIRECT_URL;
 
   } catch (error) {
