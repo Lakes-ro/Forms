@@ -169,6 +169,26 @@ textarea {
   transform: none;
 }
 
+/* Rodapé do Formulário */
+.form-footer {
+  text-align: center;
+  margin-top: 24px;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+}
+
+.form-footer a {
+  color: var(--accent-color);
+  font-weight: 600;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.form-footer a:hover {
+  color: var(--accent-hover);
+  text-decoration: underline;
+}
+
 /* Ajustes Mobile */
 @media (max-width: 640px) {
   body {
